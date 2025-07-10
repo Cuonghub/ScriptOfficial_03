@@ -3951,7 +3951,7 @@ function UpdateKitsune()
     if game.Workspace._WorldOrigin.Locations:FindFirstChild('Kitsune Island') then
         StatusKitsune:SetDesc("Kitsune Island : ✅")
     else
-        StatusKitsune:SetDesc("Kitsune Island : ✖️")
+        StatusKitsune:SetDesc("Kitsune Island : ❌")
     end
 end
 spawn(function()
@@ -4587,7 +4587,7 @@ spawn(function()
                 if game:GetService("ReplicatedStorage"):FindFirstChild("Diablo") or game:GetService("ReplicatedStorage"):FindFirstChild("Deandre") or game:GetService("ReplicatedStorage"):FindFirstChild("Urban") or game:GetService("Workspace").Enemies:FindFirstChild("Diablo") or game:GetService("Workspace").Enemies:FindFirstChild("Deandre") or game:GetService("Workspace").Enemies:FindFirstChild("Urban") then
                     StatusElite:SetDesc("Elite Boss: ✅ | Killed:  "..game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("EliteHunter","Progress"))    
                 else
-                    StatusElite:SetDesc("Elite Boss: ✖️ | Killed: "..game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("EliteHunter","Progress"))    
+                    StatusElite:SetDesc("Elite Boss: ❌ | Killed: "..game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("EliteHunter","Progress"))    
                 end
             end)
         end
@@ -4670,7 +4670,7 @@ if Sea3 then
                 if game.Workspace.Map:FindFirstChild("MysticIsland") then
                     MirageStatus="✅"
                 else
-                    MirageStatus="✖️"
+                    MirageStatus="❌"
                 end
             end)
         end
@@ -6550,9 +6550,9 @@ spawn(function()
 pcall(function()
     while wait() do
         if game:GetService("Workspace").Map:FindFirstChild("FrozenDimension") then
-            FrozenIsland:SetDesc('spawn')
+            FrozenIsland:SetDesc('✅')
         else
-            FrozenIsland:SetDesc('not spawn')
+            FrozenIsland:SetDesc('❌')
         end
     end
 end)
@@ -9063,7 +9063,7 @@ spawn(function()
             if game:GetService("Workspace").Map:FindFirstChild("PrehistoricIsland") then
                 Prehistoric:SetDesc("Volcano Island: ✅")
             else
-                Prehistoric:SetDesc("Volcano Island: ✖️")
+                Prehistoric:SetDesc("Volcano Island: ❌")
             end
         end
     end)
