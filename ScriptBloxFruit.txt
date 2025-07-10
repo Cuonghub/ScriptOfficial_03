@@ -3609,7 +3609,7 @@ spawn(function()
     end
 end)
 local ToggleCake = Tabs.Main:AddToggle("ToggleCake", {
-    Title = "Auto Fram Cake",
+    Title = "Auto Fram Cake Prince",
     Description = "", 
     Default = false
 })
@@ -6550,9 +6550,9 @@ spawn(function()
 pcall(function()
     while wait() do
         if game:GetService("Workspace").Map:FindFirstChild("FrozenDimension") then
-            FrozenIsland:SetDesc('✅')
+            FrozenIsland:SetDesc('spawn')
         else
-            FrozenIsland:SetDesc('✖️')
+            FrozenIsland:SetDesc('not spawn')
         end
     end
 end)
